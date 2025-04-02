@@ -11,7 +11,9 @@ public class Main {
         System.out.println("---------------------------------------");
         System.out.println("1- view Array");
         System.out.println("2- view Natural Array");
-        System.out.println("3- Exit Program");
+        System.out.println("3- view Even Array");
+        System.out.println("4- view Odd Array");
+        System.out.println("5- Exit Program");
         System.out.print(": ");
     }
 
@@ -47,6 +49,43 @@ public class Main {
         return sum;
     }
 
+    static int evenArr(double[] copyArr) {
+        int sum = 0;
+        System.out.println("(Even Array)\n---------------------------------------");
+        for (int i = 0; i < 10; i++) {
+            if (copyArr[i] % 2 == 0) {
+                if (i == 9) {
+                    System.out.print(copyArr[i]);
+                } else {
+                    System.out.print(copyArr[i] + " ,");
+                }
+                sum += (int) copyArr[i];
+            } else {
+                continue;
+            }
+        }
+        return sum;
+    }
+
+    static int oddArr(double[] copyArr) {
+        int sum = 0;
+        System.out.println("(Natural Array)\n---------------------------------------");
+        for (int i = 0; i < 10; i++) {
+            if (copyArr[i] % 2 != 0) {
+                if (i == 9) {
+                    System.out.print(copyArr[i]);
+                } else {
+                    System.out.print(copyArr[i] + " ,");
+                }
+                sum += (int) copyArr[i];
+            } else {
+                continue;
+            }
+        }
+        return sum;
+    }
+
+
     static boolean optionPrg(double[] copyArr, int copyOption) {
         int sum = 0;
         boolean status = false;
@@ -62,10 +101,22 @@ public class Main {
                 System.out.println("\nSum = " + sum);
                 break;
             case 3:
+                System.out.println("Viewing Even Array...");
+                sum = evenArr(copyArr);
+                System.out.println("\nSum = " + sum);
+                break;
+            case 4:
+                System.out.println("Viewing Odd Array...");
+                sum = oddArr(copyArr);
+                System.out.println("\nSum = " + sum);
+                break;
+            case 5:
                 System.out.println("Exiting ...");
                 System.out.println("Goodbye ,See you soon :D");
                 status = true;
                 break;
+            default:
+                System.out.println("Invalid Entry ,please choose options 1~5");
         }
         return status;
     }
