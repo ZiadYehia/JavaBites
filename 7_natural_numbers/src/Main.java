@@ -60,8 +60,6 @@ public class Main {
                     System.out.print(copyArr[i] + " ,");
                 }
                 sum += (int) copyArr[i];
-            } else {
-                continue;
             }
         }
         return sum;
@@ -69,7 +67,7 @@ public class Main {
 
     static int oddArr(double[] copyArr) {
         int sum = 0;
-        System.out.println("(Natural Array)\n---------------------------------------");
+        System.out.println("(Odd Array)\n---------------------------------------");
         for (int i = 0; i < 10; i++) {
             if (copyArr[i] % 2 != 0) {
                 if (i == 9) {
@@ -78,8 +76,6 @@ public class Main {
                     System.out.print(copyArr[i] + " ,");
                 }
                 sum += (int) copyArr[i];
-            } else {
-                continue;
             }
         }
         return sum;
