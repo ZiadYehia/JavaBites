@@ -1,6 +1,10 @@
 <h1 align="center">🔥 JavaBites 🔥</h1>
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/fd935af7-5bd2-463d-b72c-ca4f3d7ac0fe" alt="Java Coding" width="80%" />
+</p>
+
+<p align="center">
   A collection of fun, bite-sized Java exercises from my coding journey. <br>
   Learn, practice, and build your Java skills with simple yet powerful mini-projects.
 </p>
@@ -84,5 +88,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  Made with ❤️ by <strong>Ziad Yehia</strong>
+  Made by <strong>Ziad Yehia</strong>
 </p>
